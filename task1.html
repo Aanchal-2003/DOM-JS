@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <div id="box"></div>
+    <button onclick="demo(1)">Add</button>
+    <button onclick="demo(2)">Remove</button>
+
+
+    <script>
+        
+        var box = document.getElementById("box");
+        
+        function demo(flag) {
+            if(flag == 1) {
+                box.style.background = "green"
+            } else {
+                box.style.background = 'none'
+            }
+        }
+
+        
+        
+    </script>
+
+    
+
+
+</body>
+
+</html>

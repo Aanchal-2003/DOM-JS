@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box {
+            width: 100px;
+            height: 50px;
+            border: 0.5px solid black;
+            margin: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box"></div>
+    <button onclick="demo(1)">Add</button>
+    <button onclick="demo(2)">Remove</button>
+
+
+
+    <script>
+        var box = document.getElementById("box");
+
+        function demo(flag) {
+            if (flag == 1) {
+                box.style.boxShadow = "2px 2px 3px 4px black",
+                box.style.background = "grey",
+                box.style.transform = 'scale(1.2)'
+            }
+            else if(flag==2) {
+                box.style.boxShadow = 'none'
+                box.style.background = "none",
+                box.style.transform = 'scale(1)'
+            }
+        }
+
+        
+    </script>
+</body>
+
+</html>
